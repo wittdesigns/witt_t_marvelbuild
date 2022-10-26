@@ -57,6 +57,9 @@ header {
 
 .characters li img { width: 150px; cursor: pointer; }
 
+
+
+
 .sprite{
   width: 150px;
   height: 150px;
@@ -105,3 +108,80 @@ footer{
   background-color: rgb(40,37,37);
 
 }
+
+
+/*lightbox styles */
+.lightbox {
+  display: none;
+  width: 100vw; /* viewport width of the browser window */
+
+  height: 100vh; /* viewport height of the browser window */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0,0, 0, 0.85 );
+  background-repeat: no-repeat;
+  background-position: 40px bottom;
+  background-size: 55vh;
+
+
+}
+
+.lb_close {
+color: rgb(255, 255, 255);
+font-size: 2em;
+
+text-decoration: none;
+
+position: relative;
+top: 20px;
+left: 95%;
+font-weight: bolder;
+
+}
+
+.lb_close:hover { opacity: 0.5;}
+
+.lightbox article {
+width: 55%;
+margin-left: 40%;
+padding-top: 50px;
+}
+
+
+
+
+
+
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+
+  line-height: 1.6;
+  margin-left: 0;
+  padding-top: 2em;
+}
+
+#lightBox {
+
+  background-image: url('../images/Cap_LB_Bg.png');
+
+
+}
+
+#lightBox2 {
+
+  background-image: url('../images/Thor_LB_Bg.png');
+
+
+}
+
+/*toggle lightbox on*/
+
+
+.lightbox:target {display: block }
+
+/* .lightbox#lightBox ( display: block )
